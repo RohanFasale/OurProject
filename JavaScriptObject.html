@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+	
+	let postMatricScholarship = 
+	[
+			{
+				"cast" : "OBC",
+				"class10thPassed" : 'Yes',
+				"class12thPassed": 'Yes',
+				"marks": 85,
+	
+					
+			},
+			{
+				"cast" : "SC",
+				"class10thPassed" : 'Yes',
+				"class12thPassed": 'No',
+				"marks": 75,
+	
+					
+			},
+			{
+				"cast" : "NT",
+				"class10thPassed" : 'Yes',
+				"class12thPassed": 'Yes',
+				"marks": 55,
+	
+			}
+	];
+	
+	for(i=0;i<3;i++)
+	{
+		document.writeln('<table border=5 cellspacing=10 cellpadding=10>');
+	
+			document.writeln('<tr>');
+					document.writeln('<th>cast</th>');
+					document.writeln('<th>class10thPassed</th>');
+					document.writeln('<th>class12thPassed</th>');
+					document.writeln('<th>marks</th>');
+				/*	document.writeln('<th>Home Address</th>');*/
+			document.writeln('</tr>');	
+						
+			document.writeln('<tr>');
+					document.writeln('<td>'+postMatricScholarship[i].cast+"</td>");
+					document.writeln('<td>'+postMatricScholarship[i].class10thPassed+"</td>");
+					document.writeln('<td>'+postMatricScholarship[i].class12thPassed+"</td>");
+					document.writeln('<td>'+postMatricScholarship[i].marks+"</td>");
+							
+					document.writeln('<td>');
+	
+						
+					
+					
+			document.writeln('</tr>');
+			
+		document.writeln('</table>');
+	
+	}
+	
+	</script>
+</body>
+</html>
