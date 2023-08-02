@@ -1,0 +1,15 @@
+package project;
+
+public class StateNodalOfficer {
+	private String officerName;
+	private String password;
+	
+	public String getOfficerName() {
+		return officerName;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
+}
