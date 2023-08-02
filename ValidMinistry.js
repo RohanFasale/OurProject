@@ -7,7 +7,7 @@ function clearPassErrMsg() {
 }
 
 function clearNameErrMsg() {
-				document.getElementById('nameErr').innerHTML="";
+				document.getElementById('nmErr').innerHTML="";
 }
 
  function passCheck(y){
@@ -36,21 +36,29 @@ function clearNameErrMsg() {
     return true;
 }
 
-function nameCheck(){
-	
+function isAlphabeticName(name) {
+	if(name==""){
+		alert('username cannot be empty');
+		//document.getElementById("nmErr").innerHTML="Username cannot be blank";
+             return false;
+	}
+  const namePattern = /^[A-Za-z]+$/;
+  return namePattern.test(name);
 }
 
 function validate(){
 	var y = document.getElementById('upass').value;
 	var x = document.getElementById('uname').value;
 	
-	
+	if(!isAlphabeticName(x))  {
+       document.getElementById("nmErr").innerHTML="only aphabatic name";
+        return false;
+    }  
 	
 	if(!passCheck(y)){
 		return false;
 	}
-	else{
-	return true;
-	}
 	
+	    
+	return true;
 }
