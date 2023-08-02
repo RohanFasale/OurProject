@@ -1,0 +1,11 @@
+package project;
+
+import java.util.List;
+
+public interface StateNodalOfficerDAO {
+//	public void insertSNO(StateNodalOfficer sno); //C
+	public StateNodalOfficer selectStateNodalOfficer(String name);//R
+	public List<StateNodalOfficer> selectStateNodalOfficer(); //RA
+//	public void updateStateNodalOfficer(StateNodalOfficer StateNodalOfficer); //U
+	//public void deleteStudent(String aadharNumber);  //D
+}
